@@ -4,8 +4,7 @@
   "description": "test task for webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --progress",
-    "build": "NODE_ENV=production webpack --progress"
+     "start": "webpack-dev-server --hot --inline --open"
   },
   "author": "",
   "license": "ISC",
@@ -16,8 +15,6 @@
     "node-sass-loader": "^0.1.7",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
-  },
-  "dependencies": {
     "babel": "^6.23.0",
     "babel-loader": "^7.0.0",
     "css-loader": "^0.28.0",

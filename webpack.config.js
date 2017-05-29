@@ -1,6 +1,7 @@
-const path = require('path');
-const webpack = require('webpack');
-var ExtractTextPlugin = require ('extract-text-webpack-plugin');
+const path = require('path'),
+	webpack = require('webpack'),
+	NODE_ENV = process.env.NODE_ENV || 'development';
+var ExtractTextPlugin = require ('extract-text-webpack-plugin'),
 
 
 module.exports = {
