@@ -65,8 +65,6 @@ module.exports = {
 	],
 		    
 
-	devtool: "source-map",
-
 	devServer: {
 		contentBase: './app',
 		historyApiFallback: true,
@@ -83,7 +81,9 @@ module.exports = {
 			timings: true
 		}
 	}
-
-	watch: true
+	
+	devtool: "source-map",
+	cache: false,
+	watch: NODE_ENV == 'development'
 };
 
