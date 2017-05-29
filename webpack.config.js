@@ -67,8 +67,21 @@ module.exports = {
 	devtool: "source-map",
 
 	devServer: {
-    	contentBase: path.resolve(__dirname, './app'),  
-  	},
+		contentBase: './app',
+		historyApiFallback: true,
+		port: 8080,
+		compress: false,
+		inline: true,
+		hot: true,
+		stats: {
+			assets: true,
+			warnings: true,
+			hash: false,
+			modules: false,
+			publicPath: false,
+			timings: true
+		}
+	}
 
 	watch: true
 };
