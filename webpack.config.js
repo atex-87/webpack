@@ -60,7 +60,7 @@ module.exports = {
 	plugins: [
 		new ExtractTextPlugin({
 			filename: 'build.min.css',
-    		allChunks: true,
+    		allChunks: true
 		})
 	],
 		    
@@ -80,7 +80,7 @@ module.exports = {
 			publicPath: false,
 			timings: true
 		}
-	}
+	},
 	
 	devtool: "source-map",
 	cache: false,
